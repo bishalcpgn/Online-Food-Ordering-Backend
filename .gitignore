@@ -1,0 +1,14 @@
+
+node_modules/
+npm-debug.log
+config/index.ts
+
+logs/
+*.log
+*.log.*
+.env
+
+dist/
+build/
+
+.vscode/
