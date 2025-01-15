@@ -1,9 +1,11 @@
 import { Request, Response } from 'express'
 import { VendorModel } from '../models'
 import { EncryptPassword, GenerateSalt } from '../utility'
-import { CreateVendorInput, VendorLoginDetails } from '../dto'
+import { CreateVendorInput } from '../dto'
 
-// Create a new vendor || POST
+
+/*************************************** CREATE NEW VENDOR ****************************************************/
+
 export const CreateVendor = async (req: Request, res: Response): Promise<void> => {
     try {
         const { name,  password, email, pincode } = req.body as CreateVendorInput
@@ -32,7 +34,8 @@ export const CreateVendor = async (req: Request, res: Response): Promise<void> =
 }
 
 
-// Get all vendors || GET
+/*************************************** GET ALL VENDORS ****************************************************/
+
 export const GetVendor = async (req: Request, res: Response): Promise<any> => {
     try {
         
@@ -56,7 +59,8 @@ export const GetVendor = async (req: Request, res: Response): Promise<any> => {
 }
 
 
-// Get a single vendor || GET
+/*************************************** GET VENDOR BY ID ****************************************************/
+
 export const GetVendorById = async (req: Request, res: Response): Promise<void> => {
     try {
         const vendorID = req.params.id

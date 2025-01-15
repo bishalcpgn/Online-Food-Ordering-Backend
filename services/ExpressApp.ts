@@ -1,6 +1,6 @@
 
 import express, { Application } from 'express'
-import { AdminRoutes, VendorRoutes, ShoppingRoutes } from '../routes'
+import { AdminRoutes, VendorRoutes, ShoppingRoutes, CustomerRoutes } from '../routes'
 import morgan from 'morgan'
 import path from 'path'
 
@@ -16,6 +16,7 @@ export const App = async (app: Application) => {
     // routes 
     app.use("/admin", AdminRoutes)
     app.use("/vendor", VendorRoutes)
+    app.use("/customer", CustomerRoutes)
 
     app.use("/shopping", ShoppingRoutes)
 

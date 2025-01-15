@@ -1,9 +1,6 @@
 
 import mongoose from "mongoose"
 
-
-// better to use values form environmental variables 
-
 // mongodb database connection 
 export const connectDB = async () => {
     try {

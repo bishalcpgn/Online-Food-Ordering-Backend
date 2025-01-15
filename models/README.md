@@ -1,8 +1,5 @@
 /* 
 
-This file 
-
-
 https://mongoosejs.com/docs/typescript.html
 
 

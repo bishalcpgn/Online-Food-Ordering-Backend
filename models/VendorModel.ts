@@ -34,7 +34,7 @@ const VendorSchema: Schema = new Schema({
     profileImage: { type: String, required: false },
     ratings: { type: Number, required: false },
     foods: [{
-        type: mongoose.Schema.Types.ObjectId,
+        type: Schema.Types.ObjectId,
         ref: "Food"
     }]
 },
