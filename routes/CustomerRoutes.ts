@@ -9,7 +9,7 @@ Router.post("/signup", )
 Router.post("/login", )
 
 // Verify Customer Account
-Router.get("/verify/:token", )
+//Router.get("/verify/:token", )
 
 // Profile 
 Router.get("/profile", )
